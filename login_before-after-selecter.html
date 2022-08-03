@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+      body{
+        /* color: aliceblue; */
+        color:rgb(255, 255, 255);
+        background-color: black;
+      }
+      header::before{
+        background: url(https://source.unsplash.com/random/3840×2160/?food?gym) no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        z-index: -1;
+        top: 0px;
+        left: 0%;
+        opacity: 0.5;
+        
+
+      }
+     
+    section{
+      height:300px;
+      margin: 40px 23px 0px 0px ;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+   
+       
+      }
+      /* section::after{
+        content:"this is a befour content"
+      } */
+      h2{
+        margin-top: 250px;
+        font-size: 2rem;
+
+      }
+      p{
+        text-align: center;
+      }
+      .navigation{
+      
+        font-size: 25px;
+        display: flex;
+     justify-content: right;
+    
+margin: -13px;
+       
+      
+      }
+      li{
+
+      padding: 5px 16px 5px 16px ;
+        margin: 15px 12px 0px 5px;
+background-color: none;
+font-size: 20px;
+        list-style:none;
+        border: 1px solid white;
+        border-radius: 6px;
+      }
+      li:hover{
+        color: antiquewhite;
+        background-color:rgba(255, 255, 255, 0.116);
+
+      }
+      a{
+        text-decoration: none;
+        color: azure;
+      }
+      input{
+        padding: 3px 20px 3px 6px;
+        margin: 8px 2px 2px 5px;
+      }
+      @media (max-width:175px){
+        .item{
+          margin: 20px 5px 0px 0px ;
+          font-size: 10px;
+          padding: 5px;
+        }
+      }
+      @media  (min-width:175px) and (max-width:370px){
+        .item{
+          margin: 20px 4px 2px 4px ;
+          padding: 3px;
+          font-size: 18px;
+        }
+      }
+      @media  (min-width:370px) and (max-width:523px){
+        .item{
+          margin: 20px 4px 2px 4px ;
+          padding: 3px;
+        }
+      }
+      .button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+         margin-left:55px ;
+      }
+      button{
+        border: none;
+        font-size: 19px;
+        background:none;
+        color: white;
+        
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        margin:0px 10px 0px 10px;
+      }
+      button:hover{
+        background-color: rgba(240, 248, 255, 0.115);
+      }
+      
+     /* .rer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:flex-end;
+     }
+       */
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item" id="item-1"><a  href="#">Home</a></li>
+            <li class="item" id="item-2"><a href="#">Rate</a</li>
+            <li class="item" id="item-3"><a href="#">About</a</li>
+            <li class="item" id="item-3"><a href="#">Sign up</a</li>
+            <li class="item" id="item-4"><a href="#">Contect us</a></li>
+        </ul>
+    </nav>
+  </header>
+  <section>
+    <h2>LOG IN</h2>
+    <p> User ID<input type="email" placeholder="........@gmai.com" required="true"> </p>
+    <p> password<input type="password" placeholder="password"  required="true"> </p>
+    <div class="button">
+    <button> <a href="http://127.0.0.1:5500/html/website222.html"> login </a> </button>
+    <button> <a href="http://127.0.0.1:5500/html/Registration%20for%20gym.html"> sign up</button>
+  </div>
+  </section>
+  <!-- <header class="rer"> copyright @1998</header> -->
+</body>
+</html>
